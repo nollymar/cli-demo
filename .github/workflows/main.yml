@@ -52,6 +52,8 @@ jobs:
         uses: aarcangeli/load-dotenv@v1.0.0
         with:
           if-file-not-found: 'warn'
+          ref: main
+          fetch-depth: 0
 
       - name: Print env vars
         run: |
